@@ -1,0 +1,118 @@
+<div class="outerWrapper">
+  <div class="innerWrapper">
+    <div class="leftWrapper">
+
+      <div class="innerLeftWrapper">
+        <!-- <div class="blueWrapper"></div> -->
+        <div class="textWrapper">
+          <h2>Font Awesome</h2>
+          <h3>Icons.  Easy.   Dome</h3>
+          <h6>Get  vector icon and social logos on your<br>
+            website with Font Awesome, the web's<br>
+            most popular icon set and toolkit
+          </h6>
+        </div>
+      </div>
+
+    </div>
+    <div class="rightWrapper">
+      <div class="rightInnerWrapper">
+
+        <!-- =============================================================================== -->
+        <!-- sign in form -->
+        <!-- ================================================================================ -->
+        <div class="signinWrapper" *ngIf="!loginForm">
+          <h2>Sign In to continue</h2>
+          <label for="id">
+            <div class="inputWrapper">
+              <input type="text" name="id" id="id"  placeholder="Enter your mail id or mob number"><span><img src="assets/loginScreen/mail.svg" alt=""></span>
+            </div>
+          </label>
+          <label for="password">
+            <div class="inputWrapper">
+              <input type="text" name="password" id="password" placeholder="Password"><span><img src="assets/loginScreen/password.svg" alt=""></span>
+            </div>
+          </label>
+          <div class="forgetWrapper">
+            <input type="checkbox" name="" value="" id="remember">
+            <label for="remember">
+              <img src="assets/loginScreen/check.svg" alt="">
+            </label>
+
+            <span class="remember">Remember me</span>
+            <span class="forPsw"><a href="">Forget Password ?</a></span>
+          </div>
+          <div class="buttonWrapper">
+            <button type="button" name="button">SIGN IN</button>
+          </div>
+          <div class="diveder">
+            <span class="leftStock"></span>
+            <span class="text">or sign in with</span>
+            <span class="rightStock"></span>
+          </div>
+          <div class="socialIcon">
+            <span class="fb" ></span>
+            <span class="gmail" ></span>
+            <span class="in" ></span>
+            <span class="twitter" ></span>
+          </div>
+          <div class="footerSignupWrapper">
+            <p>Don't have an accont ? <a href="#/" (click)="formToggle()">Sign Up</a></p>
+          </div>
+        </div>
+        <!-- ================================================================================ -->
+        <!-- sign up form -->
+        <!-- ================================================================================ -->
+        <div class="signinWrapper" *ngIf="loginForm">
+          <h2>Sign Up to continue</h2>
+          <label for="id">
+            <div class="inputWrapper">
+              <input type="text" name="id" id="id"  placeholder="Enter your mail id or mob number"><span><img src="assets/loginScreen/mail.svg" alt=""></span>
+            </div>
+          </label>
+
+          <label for="password">
+            <div class="inputWrapper">
+              <input type="text" name="password" id="password" placeholder="Password"><span><img src="assets/loginScreen/password.svg" alt=""></span>
+            </div>
+          </label>
+
+          <label for="reenterpassword">
+            <div class="inputWrapper">
+              <input type="text" name="password" id="reenterpassword" placeholder="Confirm password"><span><img src="assets/loginScreen/password.svg" alt=""></span>
+            </div>
+          </label>
+
+          <label for="gender">
+            <div class="dropdoen">
+              <div class="gen" (click)="genderDropDown()">{{userGender}}</div><span><img src="assets/loginScreen/arrow.png" alt=""></span>
+                <ul *ngIf="showDropDown">
+                  <li (click)="setGender(1)">MALE</li>
+                  <li (click)="setGender(2)">FEMALE</li>
+                </ul>
+            </div>
+          </label>
+
+          <label for="dob">
+            <div class="dob">
+              <input type="text" name="" value="" id="dob" placeholder="dd/mm/yyyy">
+            </div>
+          </label>
+
+
+
+          <div class="buttonWrapper" style="margin-top:40px;">
+            <button type="button" name="button">SIGN UP</button>
+          </div>
+
+
+          <div class="footerSignupWrapper">
+            <p>you have an accont ? <a href="#/" (click)="formToggle()">Sign In</a></p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>

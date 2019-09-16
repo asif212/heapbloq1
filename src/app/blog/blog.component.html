@@ -1,0 +1,91 @@
+<app-header></app-header>
+
+<div class="wrapper"   *ngIf="!isShowEdit">
+  <div class="innerWrapper">
+
+
+<div class="imageWrapper">
+ <div class="addImgWrapper" *ngIf="isEditable">
+   <label >
+     <img src="assets/photo-camera.png" alt="">
+   </label>
+   <p>This logo appears at the top of all your publication’s stories.
+      It should have a transparent background, and be at least 600px wide and 72px tall.
+    </p>
+ </div>
+  <div class="innerImgWrapper" *ngIf="!isEditable">
+    <img src="https://cdn-images-1.medium.com/fit/c/416/151/1*ZyCXgINjVPTrxiBj6oUWeQ.jpeg" alt="">
+  </div>
+
+
+</div>
+
+
+
+
+<div class="topHeadingWrapper">
+  <h1 class="mainheading" [attr.contenteditable]="isEditable" #title id="title"
+  [ngClass]="{'editableDiv': isEditable}"></h1>
+  <h2 class="briefSummary" [attr.contenteditable]="isEditable"
+  [ngClass]="{'editableDiv': isEditable}" id="description"></h2>
+  <h3 class="author"><span>by</span>
+    The MINDS Foundation<br>
+    <span>January 29, 2019, 5:35 pm</span>
+  </h3>
+</div>
+
+<div style="float: left;width: 100%;position: relative;">
+  <div  [attr.contenteditable]="isEditable" class="mainBlogContent"  #editor id="editor" [ngClass]="{'setBorder': isEditable}">
+
+  </div>
+</div>
+
+<div class="tagWrapper">
+  <h3>Tags In</h3>
+   <h6  *ngIf="isEditable">Adding tags (up to 5) allows people to search for and discover your publication.</h6>
+  <div id="tagContainer">
+    <input type="text" placeholder="add tag" class="addTag" #inputTag [attr.contenteditable]="true" *ngIf="isEditable" (keyup)="creteTags($event)">
+    <div  ngClass="title">BLOG
+      <img src="./assets/cross.svg" alt="heapBloq" >
+    </div>
+  </div>
+
+
+</div>
+
+</div>
+
+ <div class="rightWrapper">
+   <div class="buttonWrapper">
+     <div class="ui buttons">
+      <button class="ui button active">Publish</button>
+      <div class="or">or</div>
+      <button class="ui positive button" *ngIf="!isEditable" (click)="editToggleButton()">Save</button>
+      <button class="ui positive button" *ngIf="isEditable" (click)="editToggleButton()">Edit</button>
+    </div>
+   </div>
+
+   <div class="subCatWrapper">
+       <h4>SUBCATEGORY</h4>
+       <h6>Subcategory will help you in search your blog</h6>
+       <input type="checkbox" id="1">
+      <label for="1">Angular</label>
+      <input type="checkbox" id="2">
+       <label for="2">Java</label>
+       <input type="checkbox" id="3">
+       <label for="3">Nodejs</label>
+       </div>
+ </div>
+</div>
+
+
+<!-- <div class="commentWrapper">
+<app-comment></app-comment>
+</div> -->
+
+
+<div class="wrapper" *ngIf="isShowEdit">
+<div class="innerWrapper" style="width:100%">
+<app-category  (valueChange)="displayCounter($event)"></app-category>
+</div>
+</div>

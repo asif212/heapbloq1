@@ -1,0 +1,139 @@
+.innerWrapper{
+  float: left !important;
+  width: 100% !important;
+  margin-left: 0px !important;
+  .outercardWrapper:nth-child(3n+1) {
+    margin-left: 20px !important;
+  }
+
+}
+.outercardWrapper {
+  margin-left: 20px;
+  width: 225px;
+  float: left;
+  margin-bottom: 25px;
+  height: 240px;
+}
+.addBlog{
+  border: 1px solid #0000001c;
+  float: left;
+  width: 100%;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  background-color: white;
+  flex-flow: column;
+  .imgWrapper{
+    float: left;
+    width: 79px;
+    border: 4px solid #336699;
+    border-radius: 100%;
+    padding: 13px;
+    box-sizing: border-box;
+    height: 79px;
+    cursor: pointer;
+    img{
+      width: 100%;
+      float: left;
+    }
+  }
+  p{
+    float: left;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #8c8c8c;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+}
+.categoryCard{
+  background: white;
+  border: 1px solid #0000001c;
+  height: 240px;
+  border-radius: 3px;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  .imgWrapper{
+
+    float: left;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    .gradiant{
+      background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      top: 0px;
+      opacity: .5;
+    }
+    img{
+      float: left;
+      width: 100%;
+    }
+  }
+
+  p{
+    text-align: center;
+  }
+  p.mainHeading{
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+  }
+
+  p.numPost{
+    font-size: 14px;
+    color: #000000;
+  }
+}
+
+.header{
+  padding-top: 0px;
+  padding-bottom: 40px;
+  float: left;
+  width: 100%;
+  h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #505050;
+    line-height: 1.7;
+    font-weight: bold;
+    float: left;
+    font-family: "Montserrat";
+  }
+  button{
+    background-color: #16ab39;
+    float: right;
+    color: white;
+    height: 37px;
+    line-height: 37px;
+    padding: 0 16px;
+    border-radius: 5px;
+  }
+  ul{
+    width: 100%;
+    list-style-type: none;
+    float: left;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    li{
+      float: left;
+      font-size: 16px;
+      font-weight: bold;
+      margin-right: 20px;
+      padding: 11px 10px 10px 0px;
+      cursor: pointer;
+    }
+    li.active{
+      border-bottom: 1px solid black;
+    }
+  }
+}

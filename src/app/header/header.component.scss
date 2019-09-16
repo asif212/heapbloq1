@@ -1,0 +1,39 @@
+.headerWrapper{
+  float: left;
+  width:100%;
+  background-color: #fff;
+  border-bottom:1px solid #0000001c;
+  padding: 5px 0px;
+  // logo Wrapper css start
+  .logoWrapper{
+    float: left;
+    width: 100px;
+    height: 50px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  // logo Wrapper css end
+  .searchWrapper{
+    float: left;
+    width: 100px;
+    height: 50px;
+    input{
+      float: left;
+      width: 100%;
+    }
+  }
+  // ryt menu css start
+  .rytmenu{
+    float: right;
+  }
+  // ryt menu css end
+}
+.wrapper{
+  float: left;
+  width: 1200px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-600px);
+}

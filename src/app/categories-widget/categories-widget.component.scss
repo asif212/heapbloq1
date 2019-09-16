@@ -1,0 +1,39 @@
+.categoreWrapper{
+  float: left;
+  width: 100%;
+  border-radius: 5px;
+  overflow:hidden;
+  padding: 15px;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  .widgetHeading{
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    color: #7297a9;
+  }
+    ul{
+      float: left;
+      width: 100%;
+      list-style-type: none;
+      margin-top: 15px;
+      li{
+       float: left;
+       width: 100%;
+       text-decoration: none;
+       font-size: 14px;
+       line-height: 35px;
+       border-bottom: 1px solid #e9ebee;
+       cursor: pointer;
+       color: #1d2129;
+      &:last-child{
+        padding-bottom: 0px;
+        border-bottom: 0px;
+      }
+      &:first-child{
+        padding-top: 0px;
+      }
+      }
+    }
+}

@@ -1,0 +1,49 @@
+.innerWrapper{
+  float: left !important;
+  width: 100% !important;
+  margin-left: 0px !important;
+ .outercardWrapper:nth-child(3n+1) {
+      margin-left: 20px !important;
+  }
+}
+.outercardWrapper {
+    margin-left: 20px;
+    width: 225px;
+    float: left;
+    margin-bottom: 25px;
+    height: 240px;
+}
+.addBlog{
+  border: 1px solid #0000001c;
+  float: left;
+  width: 100%;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  background-color: white;
+  flex-flow: column;
+   .imgWrapper{
+     float: left;
+      width: 79px;
+      border: 4px solid #336699;
+      border-radius: 100%;
+      padding: 13px;
+      box-sizing: border-box;
+      height: 79px;
+      cursor: pointer;
+       img{
+           width: 100%;
+           float: left;
+       }
+   }
+   p{
+     float: left;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #8c8c8c;
+    font-weight: 500;
+    margin-top: 10px;
+   }
+}

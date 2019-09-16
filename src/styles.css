@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #fbfbfb;
+}
+.ql-editor p, .ql-editor ol, .ql-editor ul, .ql-editor pre, .ql-editor blockquote, .ql-editor h1, .ql-editor h2, .ql-editor h3, .ql-editor h4, .ql-editor h5, .ql-editor h6 {
+  font-size: 16px;
+color: rgba(0, 0, 0, 0.84);
+}
+.title{
+    font-size: 14px !important;
+    padding-right: 30px!important;
+    background-color: #f0f0f0!important;
+    color: inherit!important;
+    text-transform: uppercase;
+    border-width: 0px;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 0 12px;
+    line-height: 32px;
+    background-color: #f0f0f0;
+    transition: 0.3s all ease-in-out;
+    position: relative;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 13px!important;
+    margin-bottom: 12px;
+    display: inline-block;
+    position: relative;
+    border: 3px solid #fff;
+
+}
+.title img{
+   position: absolute;
+   width: 12px;
+   cursor: pointer;
+   right: 8px;
+    top: 10px;
+
+}

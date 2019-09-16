@@ -1,0 +1,168 @@
+.commentOuterWrapper{
+  float: left;
+width: 100%;
+box-sizing: border-box;
+background-color: #f5f6f770;
+border-radius: 5px;
+padding: 15px;
+.addCommentWrapper{
+  float: left;
+  width: 100%;
+  h3{
+    float: left;
+  }
+  .inputWrapper{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    textarea{
+      width: 50%;
+      resize: none;
+      height: 100px;
+      font-size: 14px;
+      float: left;
+      border: 1px solid #0000001c;
+      border-radius: 5px;
+      padding: 5px 10px;
+      color: #000000;
+
+    }
+    input{
+      font-size: 14px;
+      float: left;
+      border: 1px solid #0000001c;
+      border-radius: 5px;
+      padding: 5px 10px;
+      color: #000000;
+      width: 30%;
+      height: 100%;
+    }
+    span{
+      float: left;
+      padding: 5px 5px;
+      font-size: 14px;
+      color: #00000080;
+      font-style: italic;
+    }
+    h4{
+      margin-bottom: 5px;
+      font-size: 14px;
+      font-style: italic;
+    }
+    button{
+      border: 1px solid #0000001c;
+      color: white;
+      background-color: #15b3c38c;
+      border-radius: 3px;
+      padding: 10px 10px;
+      font-size: 14px;
+      box-shadow: inset 1px 1px 2px 1px #ccc8c852, 3px 3px 2px 1px #ccc8c852;
+      cursor: pointer;
+    }
+  }
+}
+
+  .commentWrapper,.rplyWrapper{
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+    border: 1px solid #0000001c;
+      margin-bottom: 20px;
+    .commentHead{
+    border: 1px solid #0000001c;
+    float: left;
+    width: 100%;
+    background-color: #f5f6f7;
+    padding: 10px 70px 10px 20px;
+    box-sizing: border-box;
+    position: relative;
+
+      .name{
+        float: left;
+        display: inline-block;
+        font-size: 14px;
+        color: #000;
+        position: relative;
+          &:after{
+            content: "says:";
+            position: absolute;
+            right: -32px;
+            font-size: 12px;
+            font-weight: normal;
+            top: 3px;
+            font-style: italic;
+
+          }
+      }
+      .rytWrapper{
+        float: right;
+        display: inline-block;
+        .date{
+          font-size: 12px;
+          padding-right: 5px;
+          color: #000;
+          font-weight: 500;
+        }
+        .rply{
+          font-size: 12px;
+              color: #c14c4c;
+              font-weight: 500;
+              cursor: pointer;
+        }
+      }
+      figure{
+        position: absolute;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 3px;
+        overflow: hidden;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .commentTextWrapper{
+      float: left;
+      width: 100%;
+      padding: 25px 20px;
+      box-sizing: border-box;
+      h5{
+        font-size: 14px;
+         font-weight: 400;
+         color: #000;
+      }
+    }
+
+
+  }
+}
+.rplyOuterWrapper{
+  float: left;
+  width: calc( 100% - 40px);
+  margin: 0px 20px 20px 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-sizing: border-box;
+  .rplyWrapper{
+width:100%;
+box-sizing: border-box;
+margin-bottom: 20px;
+}
+}
+
+.commentFieldWrapper{
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #0000001c;
+  float: left;
+}
+.rplyCommnetWrapper{
+  width:100% !important;
+  margin: 0px 0px 0px 0px ;
+}
+.placeholder{
+  font-size: 14px;
+  color: #0006;
+}

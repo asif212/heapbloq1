@@ -1,0 +1,98 @@
+<div class="commentOuterWrapper">
+
+  <div class="addCommentWrapper">
+     <h3>comment</h3>
+     <div class="inputWrapper">
+       <input type="text" placeholder="Name"> <span>your Name*</span>
+    </div>
+    <div class="inputWrapper">
+       <input type="text" placeholder="Email address"> <span>Email address* (<i>will not be published</i>)</span>
+    </div>
+    <div class="inputWrapper">
+       <h4>Your comment</h4>
+       <textarea name="name" rows="8" cols="80"></textarea>
+    </div>
+    <div class="inputWrapper">
+       <button>Post Comment</button>
+    </div>
+  </div>
+
+
+  <div class="commentWrapper">
+    <div class="commentHead">
+      <h3 class="name"><i>Ayush sahu</i></h3>
+      <div class="rytWrapper">
+        <span class="date"><i>Feb 24th 2010 at 2:20 pm</i></span>
+        <span class="rply" (click)="showRply(1)"><i>Rply</i></span>
+      </div>
+      <figure>
+        <img src="https://scontent.fdel11-1.fna.fbcdn.net/v/t1.0-1/c0.0.40.40a/p40x40/49533099_1030593403786820_6578579223777116160_n.jpg?_nc_cat=103&amp;_nc_ht=scontent.fdel11-1.fna&amp;oh=4e4cd5143848721a71036b86154e7ad3&amp;oe=5D0FF005" alt="">
+      </figure>
+    </div>
+    <div class="commentTextWrapper">
+      <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, qui, accusamus animi porro omnis cumque vitae dolor doloribus ipsum, dolore sequi est corporis. At sequi, culpa velit. Odio, laboriosam, quos.</h5>
+    </div>
+
+  <div class="rplyOuterWrapper" *ngIf="isShowRply == 1">
+    <div class="rplyWrapper">
+      <div class="commentHead">
+        <h3 class="name"><i>Ayush sahu</i></h3>
+        <div class="rytWrapper">
+          <span class="date"><i>Feb 24th 2010 at 2:20 pm</i></span>
+          <span class="rply"><i>Rply</i></span>
+        </div>
+        <figure>
+          <img src="https://scontent.fdel11-1.fna.fbcdn.net/v/t1.0-1/c0.0.40.40a/p40x40/49533099_1030593403786820_6578579223777116160_n.jpg?_nc_cat=103&amp;_nc_ht=scontent.fdel11-1.fna&amp;oh=4e4cd5143848721a71036b86154e7ad3&amp;oe=5D0FF005" alt="">
+        </figure>
+      </div>
+      <div class="commentTextWrapper">
+        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, qui, accusamus animi porro omnis cumque vitae dolor doloribus ipsum, dolore sequi est corporis. At sequi, culpa velit. Odio, laboriosam, quos.</h5>
+      </div>
+    </div>
+
+     <div class="commentFieldWrapper rplyCommnetWrapper" contenteditable="true">
+       <span class="placeholder">write a comment...</span>
+     </div>
+
+</div>
+  </div>
+
+  <div class="commentWrapper">
+    <div class="commentHead">
+      <h3 class="name"><i>Ayush sahu</i></h3>
+      <div class="rytWrapper">
+        <span class="date"><i>Feb 24th 2010 at 2:20 pm</i></span>
+        <span class="rply" (click)="showRply(2)"><i>Rply</i></span>
+      </div>
+      <figure>
+        <img src="https://scontent.fdel11-1.fna.fbcdn.net/v/t1.0-1/c0.0.40.40a/p40x40/49533099_1030593403786820_6578579223777116160_n.jpg?_nc_cat=103&amp;_nc_ht=scontent.fdel11-1.fna&amp;oh=4e4cd5143848721a71036b86154e7ad3&amp;oe=5D0FF005" alt="">
+      </figure>
+    </div>
+    <div class="commentTextWrapper">
+      <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, qui, accusamus animi porro omnis cumque vitae dolor doloribus ipsum, dolore sequi est corporis. At sequi, culpa velit. Odio, laboriosam, quos.</h5>
+    </div>
+
+  <div class="rplyOuterWrapper" *ngIf="isShowRply == 2">
+    <div class="rplyWrapper">
+      <div class="commentHead">
+        <h3 class="name"><i>Ayush sahu</i></h3>
+        <div class="rytWrapper">
+          <span class="date"><i>Feb 24th 2010 at 2:20 pm</i></span>
+          <span class="rply"><i>Rply</i></span>
+        </div>
+        <figure>
+          <img src="https://scontent.fdel11-1.fna.fbcdn.net/v/t1.0-1/c0.0.40.40a/p40x40/49533099_1030593403786820_6578579223777116160_n.jpg?_nc_cat=103&amp;_nc_ht=scontent.fdel11-1.fna&amp;oh=4e4cd5143848721a71036b86154e7ad3&amp;oe=5D0FF005" alt="">
+        </figure>
+      </div>
+      <div class="commentTextWrapper">
+        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, qui, accusamus animi porro omnis cumque vitae dolor doloribus ipsum, dolore sequi est corporis. At sequi, culpa velit. Odio, laboriosam, quos.</h5>
+      </div>
+    </div>
+
+     <div class="commentFieldWrapper rplyCommnetWrapper" contenteditable="true">
+       <span class="placeholder">write a comment...</span>
+     </div>
+
+</div>
+  </div>
+</div>

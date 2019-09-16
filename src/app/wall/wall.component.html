@@ -1,0 +1,31 @@
+<div class="topWrapper">
+  <app-header></app-header>
+  <div class="wrapper">
+    <div class=" rytWrapper">
+      <div class="searchWrapper">
+        <input type="search" placeholder="search">
+      </div>
+
+<!-- only for admin to add new post  -->
+<!-- add new blog wrapper start -->
+      <div class="addPostWrapper"  routerLink="/admin">
+        <p>Add New Post</p>
+      </div>
+<!-- add new blog wrapper end -->
+
+      <app-categories-widget></app-categories-widget>
+
+      <app-top-post></app-top-post>
+
+    </div>
+
+    <div class="leftWrapper">
+        <div class="outercardWrapper">
+        <app-wallcard></app-wallcard>
+        <app-wallcard></app-wallcard>
+        <app-wallcard></app-wallcard>
+        </div>
+    </div>
+
+  </div>
+</div>
