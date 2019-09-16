@@ -35,7 +35,7 @@
     "serve:prerender": "cd dist/browser && http-server",
     "serve:ssr": "node dist/server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "npm run build:ssr && npm run serve:ssr"
+    "heroku-postbuild": "ng build --prod"
   },
   "pre-commit": [],
   "private": true,
