@@ -25,7 +25,7 @@
   "scripts": {
     "build": "npm run build:ssr && npm run serve:ssr",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "lint": "ng lint heapbloq",
     "build:client-and-server-bundles": "ng build --prod && ng run heapbloq:server:production",
     "build:prerender": "npm run build:client-and-server-bundles && npm run compile:server && npm run generate:prerender",
@@ -34,7 +34,8 @@
     "generate:prerender": "cd dist && node prerender",
     "serve:prerender": "cd dist/browser && http-server",
     "serve:ssr": "node dist/server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "npm run build:ssr && npm run serve:ssr"
   },
   "pre-commit": [],
   "private": true,
@@ -69,7 +70,8 @@
     "mongoose": "^5.4.7",
     "morgan": "^1.9.1",
     "aws-sdk": "2.x",
-    "ejs": "2.x"
+    "ejs": "2.x",
+    "typescript": "3.1.6"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.11.4",
@@ -82,7 +84,10 @@
     "pre-commit": "^1.2.2",
     "ts-loader": "^4.2.0",
     "tslint": "^5.7.0",
-    "typescript": "3.1.6",
     "nodemon": "^1.18.9"
+  },
+  "engines": {
+    "node": "8.9.3",
+    "npm": "5.5.1"
   }
 }
