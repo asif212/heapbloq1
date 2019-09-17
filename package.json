@@ -25,7 +25,7 @@
   "scripts": {
     "build": "npm run build:ssr && npm run serve:ssr",
     "ng": "ng",
-    "start": "node server.js",
+    "start": "node dist/server",
     "lint": "ng lint heapbloq",
     "build:client-and-server-bundles": "ng build --prod && ng run heapbloq:server:production",
     "build:prerender": "npm run build:client-and-server-bundles && npm run compile:server && npm run generate:prerender",
@@ -35,7 +35,7 @@
     "serve:prerender": "cd dist/browser && http-server",
     "serve:ssr": "node dist/server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "npm run build:ssr && npm run serve:ssr",
+    "heroku-postbuild": "npm run build:ssr",
     "scss": "node-sass --watch assets/scss -o assets/css"
   },
   "pre-commit": [],
